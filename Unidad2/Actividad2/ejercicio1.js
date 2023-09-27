@@ -1,4 +1,4 @@
-let num = intParse(prompt('Introduce un número'))
+let num = parseInt(prompt('Introduce un número'))
 if (num % 2 == 0) {
     alert('El numero es par')
 } else {
