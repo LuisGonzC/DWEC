@@ -23,7 +23,7 @@ if (salario >= 1000 && salario <= 2000) {
     } else {
         salario = 1100;
     }
-}
+} 
 
 alert('Nombre: ' + nombre + '\nApellidos: ' + apellidos +
 '\nEdad: ' + edad + ' Salario: ' + salario);
