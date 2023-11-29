@@ -6,18 +6,19 @@ function Manejador() {
     }
 }
 
-let div = document.createElement('div');
-    let boton = document.createElement('button');
-    boton.innerHTML = "Ver respuesta";
-
 for (let chiste of listaChistes.chistes) {
-    let div = document.createElement('div');
+    let divCont = document.getElementById('enunChiste');
+
+    let divEnun = document.createElement('div');
+
     let boton = document.createElement('button');
     boton.innerHTML = "Ver respuesta";
-
-    div.innerHTML = chiste.enunciado + "\n" + boton;
 
     let manejador = new Manejador();
     manejador.chiste = chiste;
-    boton.addEventListener('onClick', manejador);
+    boton.addEventListener('click', manejador);
+
+    divEnun.innerHTML = chiste.enunciado + "\n" + boton;
+
+    divCont.append(divEnun);
 }
